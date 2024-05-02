@@ -2,6 +2,36 @@ body {
     background-color: black !important;
 }
 
+#lifePointsOne {
+    border: solid 2px red;
+    
+}
+
+#lifePointsTwo {
+    border: solid 2px red;
+    
+}
+
+#lifePointsThree {
+    border: solid 2px red;
+    
+}
+
+#lifePointsFour {
+    border: solid 2px red;
+    
+}
+
+#lifePointsFive {
+    border: solid 2px red;
+    
+}
+
+#lifePointSix {
+    border: solid 2px red;
+    
+}
+
 #calculator {
     display: none;
 }
@@ -16,3 +46,4 @@ body {
 #nameScreen {
     display: none;
 }
+
