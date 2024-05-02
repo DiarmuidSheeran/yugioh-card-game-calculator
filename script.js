@@ -153,6 +153,9 @@ minusButtons.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountOne'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
+        if (lifePointInput.value <=0 ){
+            lifePointInput.value = 8000;
+        }
     });
 });
 
@@ -173,6 +176,9 @@ minusButtonsTwo.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountTwo'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
+        if (lifePointInput.value <=0 ){
+            lifePointInput.value = 8000;
+        }
     });
 });
 
@@ -193,6 +199,9 @@ minusButtonsThree.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountThree'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
+        if (lifePointInput.value <=0 ){
+            lifePointInput.value = 8000;
+        }
     });
 });
 
@@ -213,6 +222,9 @@ minusButtonsFour.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountFour'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
+        if (lifePointInput.value <=0 ){
+            lifePointInput.value = 8000;
+        }
     });
 });
 
@@ -233,6 +245,9 @@ minusButtonsFive.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountFive'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
+        if (lifePointInput.value <=0 ){
+            lifePointInput.value = 16000;
+        }
     });
 });
 
@@ -253,5 +268,8 @@ minusButtonsSix.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountSix'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
+        if (lifePointInput.value <=0 ){
+            lifePointInput.value = 16000;
+        }
     });
 });
