@@ -8,12 +8,35 @@
     <title>Yugioh Calculator</title>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <div class="row mb-4">
             <div class="col text-center">
                 <h1 class="text-light">Yugioh Duel Calculator</h1>
             </div>
         </div>
+    </div>
+
+    <div class="container" id="startScreen">
+        <div class="row">
+            <div class="col text-center">
+                <div class="text-light font-weight-bold">
+                    <label for="level"><h4><strong>Select Number of Duelists:</strong></h4></label>
+                    <select class="text-center" id="numberOfPlayers" name="level">
+                        <option value="1" class="font-weight-bold">2 Duelists</option>
+                        <option value="2" class="font-weight-bold">3 Duelists</option>
+                        <option value="3" class="font-weight-bold">4 Duelists</option>
+                        <option value="4" class="font-weight-bold">4 Duelists Teams</option>
+                    </select>
+                    <br>
+                    <button class="btn btn-primary mt-4" id="startBtn"><strong>Next</strong> </button>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="calculator">
         <div class="row">
             <div class="col text-center">
                 <h3 class="text-light">Player 1:</h3>
