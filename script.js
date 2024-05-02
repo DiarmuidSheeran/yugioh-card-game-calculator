@@ -71,6 +71,37 @@ nextBtn.addEventListener('click', function() {
     }
 });
 
+playerOne.addEventListener('focus', function() {
+    if (playerOne.value === 'Player One') {
+        playerOne.value = ''; // Clear the default value
+    }
+});
+playerTwo.addEventListener('focus', function() {
+    if (playerTwo.value === 'Player Two') {
+        playerTwo.value = ''; // Clear the default value
+    }
+});
+playerThree.addEventListener('focus', function() {
+    if (playerThree.value === 'Player Three') {
+        playerThree.value = ''; // Clear the default value
+    }
+});
+playerFour.addEventListener('focus', function() {
+    if (playerFour.value === 'Player Four') {
+        playerFour.value = ''; // Clear the default value
+    }
+});
+teamOne.addEventListener('focus', function() {
+    if (teamOne.value === 'Team One') {
+        teamOne.value = ''; // Clear the default value
+    }
+});
+teamTwo.addEventListener('focus', function() {
+    if (teamTwo.value === 'Team Two') {
+        teamTwo.value = ''; // Clear the default value
+    }
+});
+
 startBtn.addEventListener('click', function() {
     nameScreen.style.display = 'none';
     calculator.style.display = 'block';
