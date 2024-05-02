@@ -16,6 +16,14 @@ const playerThreeCalc = document.getElementById('playerThreeCalc');
 const playerFourCalc = document.getElementById('playerFourCalc');
 const teamOneCalc = document.getElementById('teamOneCalc');
 const teamTwoCalc = document.getElementById('teamTwoCalc');
+const playerNameOne = document.getElementById('playerNameOne');
+const playerNameTwo = document.getElementById('playerNameTwo');
+const playerNameThree = document.getElementById('playerNameThree');
+const playerNameFour = document.getElementById('playerNameFour');
+const teamNameOne = document.getElementById('teamNameOne');
+const teamNameTwo = document.getElementById('teamNameTwo');
+
+
 
 const plusButtons = document.querySelectorAll('.btn-plus-one');
 const minusButtons = document.querySelectorAll('.btn-minus-one');
@@ -66,6 +74,12 @@ nextBtn.addEventListener('click', function() {
 startBtn.addEventListener('click', function() {
     nameScreen.style.display = 'none';
     calculator.style.display = 'block';
+    playerNameOne.innerHTML = playerOne.value;
+    playerNameTwo.innerHTML = playerTwo.value;
+    playerNameThree.innerHTML = playerThree.value;
+    playerNameFour.innerHTML = playerFour.value;
+    teamNameOne.innerHTML = teamOne.value;
+    teamNameTwo.innerHTML = teamTwo.value;
     switch (numberOfPlayers.value) {
         case '1':
             playerThreeCalc.style.display = 'none';
