@@ -181,15 +181,16 @@ minusButtons.forEach((button, index) => {
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
-            alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.");
             if (playerThreeCalc.style.display == 'none' && playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none') {
                 scoreTwo ++
                 winCountTwo.innerHTML = scoreTwo
                 lifePointInput.value = 8000;
+                alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.");
             }
             else if (playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
                 if (lifePointTwo.value != 0 && lifePointThree.value !=0){
                     changeAmountOne.disabled = true;
+                    alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.\n\n" + playerOne.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerThree.value + "!\n\n It's time to DUEL!");
                 }
                 if (lifePointOne.value > 0){
                     changeAmountOne.disabled = false;
@@ -203,6 +204,7 @@ minusButtons.forEach((button, index) => {
                     changeAmountOne.disabled = false;
                     changeAmountTwo.disabled = false;
                     changeAmountThree.disabled = false;
+                    alert("And the winner is " + playerTwo.value + "!\n\nNo shaddow realm for you Mr. " + playerTwo.value + "!");
                 }
                 if (lifePointTwo.value <= 0 && lifePointThree.value != 0 && lifePointOne.value <= 0){
                     scoreThree ++
@@ -213,6 +215,7 @@ minusButtons.forEach((button, index) => {
                     changeAmountOne.disabled = false;
                     changeAmountTwo.disabled = false;
                     changeAmountThree.disabled = false;
+                    alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
                 }
             }
             
@@ -240,16 +243,16 @@ minusButtonsTwo.forEach((button, index) => {
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
-            alert("To the shaddow realm with you!\n\n" + playerTwo.value + "'s' life points have reached 0.");
-
             if (playerThreeCalc.style.display == 'none' && playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none') {
                 scoreOne ++
                 winCountOne.innerHTML = scoreOne
                 lifePointInput.value = 8000;
+                alert("To the shaddow realm with you!\n\n" + playerTwo.value + "'s' life points have reached 0.");
             }
             else if (playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
                 if (lifePointOne.value != 0 && lifePointThree.value !=0){
                     changeAmountTwo.disabled = true;
+                    alert("To the shaddow realm with you!\n\n" + playerTwo.value + "'s' life points have reached 0.\n\n" + playerTwo.value + " has been elimanted from the duel!\n\nIt's down to " + playerOne.value + " and " + playerThree.value + "!\n\nIt's time to DUEL!");
                 }
                 if (lifePointTwo.value > 0){
                     changeAmountTwo.disabled = false;
@@ -263,6 +266,7 @@ minusButtonsTwo.forEach((button, index) => {
                     changeAmountTwo.disabled = false;
                     changeAmountOne.disabled = false;
                     changeAmountThree.disabled = false;
+                    alert("And the winner is " + playerOne.value + "!\n\nNo shaddow realm for you Mr. " + playerOne.value + "!");
                 }
                 if (lifePointOne.value <= 0 && lifePointThree.value != 0 && lifePointTwo.value <= 0){
                     scoreThree ++
@@ -273,6 +277,7 @@ minusButtonsTwo.forEach((button, index) => {
                     changeAmountTwo.disabled = false;
                     changeAmountOne.disabled = false;
                     changeAmountThree.disabled = false;
+                    alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
                 }
             }
         }
@@ -304,6 +309,7 @@ minusButtonsThree.forEach((button, index) => {
             if (playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
                 if (lifePointTwo.value != 0 && lifePointOne.value !=0){
                     changeAmountThree.disabled = true;
+                    alert("To the shaddow realm with you!\n\n" + playerThree.value + "'s' life points have reached 0.\n\n" + playerThree.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerOne.value + "!\n\n It's time to DUEL!");
                 }
                 if (lifePointThree.value > 0){
                     changeAmountThree.disabled = false;
@@ -317,6 +323,7 @@ minusButtonsThree.forEach((button, index) => {
                     changeAmountThree.disabled = false;
                     changeAmountOne.disabled = false;
                     changeAmountTwo.disabled = false;
+                    alert("And the winner is " + playerTwo.value + "!\n\nNo shaddow realm for you Mr. " + playerTwo.value + "!");
                 }
                 if (lifePointTwo.value <= 0 && lifePointOne.value != 0 && lifePointThree.value <= 0) {
                     scoreOne ++
@@ -327,6 +334,7 @@ minusButtonsThree.forEach((button, index) => {
                     changeAmountThree.disabled = false;
                     changeAmountOne.disabled = false;
                     changeAmountTwo.disabled = false;
+                    alert("And the winner is " + playerOne.value + "!\n\nNo shaddow realm for you Mr. " + playerOne.value + "!");
                 }
             }
         }
