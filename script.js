@@ -156,6 +156,7 @@ minusButtons.forEach((button, index) => {
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 8000;
+            alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.");
         }
         changeAmountInput.value = "LP";
     });
@@ -181,6 +182,7 @@ minusButtonsTwo.forEach((button, index) => {
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 8000;
+            alert("To the shaddow realm with you!\n\n" + playerTwo.value + "'s' life points have reached 0.");
         }
         changeAmountInput.value = "LP";
     });
@@ -206,6 +208,7 @@ minusButtonsThree.forEach((button, index) => {
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 8000;
+            alert("To the shaddow realm with you!\n\n" + playerThree.value + "'s' life points have reached 0.");
         }
         changeAmountInput.value = "LP";
     });
@@ -231,6 +234,7 @@ minusButtonsFour.forEach((button, index) => {
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 8000;
+            alert("To the shaddow realm with you!\n\n" + teamOne.value + "'s' life points have reached 0.");
         }
         changeAmountInput.value = "LP";
     });
@@ -256,6 +260,7 @@ minusButtonsFive.forEach((button, index) => {
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 16000;
+            alert("To the shaddow realm with you!\n\n" + teamTwo.value + "'s' life points have reached 0.");
         }
         changeAmountInput.value = "LP";
     });
@@ -285,3 +290,4 @@ minusButtonsSix.forEach((button, index) => {
         changeAmountInput.value = "LP";
     });
 });
+
