@@ -143,6 +143,7 @@ plusButtons.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountOne'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) + changeAmount;
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -156,6 +157,7 @@ minusButtons.forEach((button, index) => {
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 8000;
         }
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -166,6 +168,7 @@ plusButtonsTwo.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountTwo'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) + changeAmount;
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -179,6 +182,7 @@ minusButtonsTwo.forEach((button, index) => {
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 8000;
         }
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -189,6 +193,7 @@ plusButtonsThree.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountThree'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) + changeAmount;
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -202,6 +207,7 @@ minusButtonsThree.forEach((button, index) => {
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 8000;
         }
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -212,6 +218,7 @@ plusButtonsFour.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountFour'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) + changeAmount;
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -225,6 +232,7 @@ minusButtonsFour.forEach((button, index) => {
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 8000;
         }
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -235,6 +243,7 @@ plusButtonsFive.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountFive'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) + changeAmount;
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -248,6 +257,7 @@ minusButtonsFive.forEach((button, index) => {
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 16000;
         }
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -258,6 +268,7 @@ plusButtonsSix.forEach((button, index) => {
         const changeAmountInput = document.getElementById('changeAmountSix'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) + changeAmount;
+        changeAmountInput.value = "LP";
     });
 });
 
@@ -271,5 +282,6 @@ minusButtonsSix.forEach((button, index) => {
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 16000;
         }
+        changeAmountInput.value = "LP";
     });
 });
