@@ -23,7 +23,33 @@ const playerNameFour = document.getElementById('playerNameFour');
 const teamNameOne = document.getElementById('teamNameOne');
 const teamNameTwo = document.getElementById('teamNameTwo');
 
+const winCountOne = document.getElementById('winCountOne');
+const winCountTwo = document.getElementById('winCountTwo');
+const winCountThree = document.getElementById('winCountThree');
+const winCountFour = document.getElementById('winCountFour');
+const winCountTeamOne = document.getElementById('winCountTeamOne');
+const winCountTeamTwo = document.getElementById('winCountTeamTwo');
 
+let scoreOne = 0
+let scoreTwo = 0
+let scoreThree = 0
+let scoreFour = 0
+let scoreFive = 0
+let scoreSix = 0
+
+const lifePointOne = document.getElementById('lifePointsOne');
+const lifePointTwo = document.getElementById('lifePointsTwo');
+const lifePointThree = document.getElementById('lifePointsThree');
+const lifePointFour = document.getElementById('lifePointsFour');
+const lifePointFive = document.getElementById('lifePointsFive');
+const lifePointSix = document.getElementById('lifePointsSix');
+
+const changeAmountOne = document.getElementById('changeAmountOne');
+const changeAmountTwo = document.getElementById('changeAmountTwo');
+const changeAmountThree = document.getElementById('changeAmountThree');
+const changeAmountFour = document.getElementById('changeAmountFour');
+const changeAmountFive = document.getElementById('changeAmountFive');
+const changeAmountSix = document.getElementById('changeAmountSix');
 
 const plusButtons = document.querySelectorAll('.btn-plus-one');
 const minusButtons = document.querySelectorAll('.btn-minus-one');
@@ -155,8 +181,41 @@ minusButtons.forEach((button, index) => {
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
-            lifePointInput.value = 8000;
             alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.");
+            if (playerThreeCalc.style.display == 'none' && playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none') {
+                scoreTwo ++
+                winCountTwo.innerHTML = scoreTwo
+                lifePointInput.value = 8000;
+            }
+            else if (playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
+                if (lifePointTwo.value != 0 && lifePointThree.value !=0){
+                    changeAmountOne.disabled = true;
+                }
+                if (lifePointOne.value > 0){
+                    changeAmountOne.disabled = false;
+                }
+                if (lifePointTwo.value != 0 && lifePointThree.value <= 0 && lifePointOne.value <= 0){
+                    scoreTwo ++
+                    winCountTwo.innerHTML = scoreTwo
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                }
+                if (lifePointTwo.value <= 0 && lifePointThree.value != 0 && lifePointOne.value <= 0){
+                    scoreThree ++
+                    winCountThree.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                }
+            }
+            
         }
         changeAmountInput.value = "LP";
     });
@@ -181,8 +240,41 @@ minusButtonsTwo.forEach((button, index) => {
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
-            lifePointInput.value = 8000;
             alert("To the shaddow realm with you!\n\n" + playerTwo.value + "'s' life points have reached 0.");
+
+            if (playerThreeCalc.style.display == 'none' && playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none') {
+                scoreOne ++
+                winCountOne.innerHTML = scoreOne
+                lifePointInput.value = 8000;
+            }
+            else if (playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
+                if (lifePointOne.value != 0 && lifePointThree.value !=0){
+                    changeAmountTwo.disabled = true;
+                }
+                if (lifePointTwo.value > 0){
+                    changeAmountTwo.disabled = false;
+                }
+                if (lifePointOne.value != 0 && lifePointThree.value <= 0 && lifePointTwo.value <= 0){
+                    scoreOne ++
+                    winCountOne.innerHTML = scoreOne
+                    lifePointInput.value = 8000;
+                    lifePointOne.value = 8000;
+                    lifePointThree.value = 8000;
+                    changeAmountTwo.disabled = false;
+                    changeAmountOne.disabled = false;
+                    changeAmountThree.disabled = false;
+                }
+                if (lifePointOne.value <= 0 && lifePointThree.value != 0 && lifePointTwo.value <= 0){
+                    scoreThree ++
+                    winCountThree.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointOne.value = 8000;
+                    lifePointThree.value = 8000;
+                    changeAmountTwo.disabled = false;
+                    changeAmountOne.disabled = false;
+                    changeAmountThree.disabled = false;
+                }
+            }
         }
         changeAmountInput.value = "LP";
     });
@@ -207,8 +299,36 @@ minusButtonsThree.forEach((button, index) => {
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
-            lifePointInput.value = 8000;
             alert("To the shaddow realm with you!\n\n" + playerThree.value + "'s' life points have reached 0.");
+
+            if (playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
+                if (lifePointTwo.value != 0 && lifePointOne.value !=0){
+                    changeAmountThree.disabled = true;
+                }
+                if (lifePointThree.value > 0){
+                    changeAmountThree.disabled = false;
+                }
+                if (lifePointTwo.value != 0 && lifePointOne.value <= 0 && lifePointThree.value <= 0){
+                    scoreTwo ++
+                    winCountTwo.innerHTML = scoreTwo
+                    lifePointInput.value = 8000;
+                    lifePointOne.value = 8000;
+                    lifePointTwo.value = 8000;
+                    changeAmountThree.disabled = false;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                }
+                if (lifePointTwo.value <= 0 && lifePointOne.value != 0 && lifePointThree.value <= 0) {
+                    scoreOne ++
+                    winCountOne.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointOne.value = 8000;
+                    changeAmountThree.disabled = false;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                }
+            }
         }
         changeAmountInput.value = "LP";
     });
