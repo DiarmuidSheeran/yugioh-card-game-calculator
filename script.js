@@ -188,7 +188,7 @@ minusButtons.forEach((button, index) => {
                 alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.");
             }
             else if (playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
-                if (lifePointTwo.value != 0 && lifePointThree.value !=0){
+                if (lifePointTwo.value != 0 && lifePointThree.value !=0 && lifePointFour.value !=0){
                     changeAmountOne.disabled = true;
                     alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.\n\n" + playerOne.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerThree.value + "!\n\n It's time to DUEL!");
                 }
@@ -216,6 +216,54 @@ minusButtons.forEach((button, index) => {
                     changeAmountTwo.disabled = false;
                     changeAmountThree.disabled = false;
                     alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
+                }
+            }
+            else if (teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
+                if (lifePointTwo.value != 0 && lifePointThree.value !=0 && lifePointFour.value !=0){
+                    changeAmountOne.disabled = true;
+                    alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.\n\n" + playerOne.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerThree.value + "!\n\n It's time to DUEL!");
+                }
+                if (lifePointOne.value > 0){
+                    changeAmountOne.disabled = false;
+                }
+                if (lifePointTwo.value != 0 && lifePointThree.value <= 0 && lifePointOne.value <= 0 && lifePointFour.value <= 0){
+                    scoreTwo ++
+                    winCountTwo.innerHTML = scoreTwo
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerTwo.value + "!\n\nNo shaddow realm for you Mr. " + playerTwo.value + "!");
+                }
+                if (lifePointTwo.value <= 0 && lifePointThree.value != 0 && lifePointOne.value <= 0 && lifePointFour.value <= 0){
+                    scoreThree ++
+                    winCountThree.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
+                }
+                if (lifePointTwo.value <= 0 && lifePointThree.value <= 0 && lifePointOne.value <= 0 && lifePointFour.value != 0){
+                    scoreFour ++
+                    winCountThree.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerFour.value + "!\n\nNo shaddow realm for you Mr. " + playerFour.value + "!");
                 }
             }
             
@@ -279,6 +327,65 @@ minusButtonsTwo.forEach((button, index) => {
                     changeAmountThree.disabled = false;
                     alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
                 }
+                if (lifePointOne.value <= 0 && lifePointThree.value <= 0 && lifePointTwo.value <= 0 && lifePointFour.value != 0){
+                    scoreFour ++
+                    winCountFour.innerHTML = scoreFour
+                    lifePointInput.value = 8000;
+                    lifePointOne.value = 8000;
+                    lifePointThree.value = 8000;
+                    changeAmountTwo.disabled = false;
+                    changeAmountOne.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerFour.value + "!\n\nNo shaddow realm for you Mr. " + playerFour.value + "!");
+                }
+            }
+            else if (teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
+                if (lifePointOne.value != 0 && lifePointThree.value !=0 && lifePointFour.value !=0){
+                    changeAmountTwo.disabled = true;
+                    alert("To the shaddow realm with you!\n\n" + playerTwo.value + "'s' life points have reached 0.\n\n" + playerTwo.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerThree.value + " and " + playerFour.value + "!\n\n It's time to DUEL!");
+                }
+                if (lifePointOne.value > 0){
+                    changeAmountOne.disabled = false;
+                }
+                if (lifePointTwo.value != 0 && lifePointThree.value <= 0 && lifePointOne.value <= 0 && lifePointFour.value <= 0){
+                    scoreTwo ++
+                    winCountTwo.innerHTML = scoreTwo
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerTwo.value + "!\n\nNo shaddow realm for you Mr. " + playerTwo.value + "!");
+                }
+                if (lifePointTwo.value <= 0 && lifePointThree.value != 0 && lifePointOne.value <= 0 && lifePointFour.value <= 0){
+                    scoreThree ++
+                    winCountThree.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
+                }
+                if (lifePointTwo.value <= 0 && lifePointThree.value <= 0 && lifePointOne.value <= 0 && lifePointFour.value != 0){
+                    scoreFour ++
+                    winCountThree.innerHTML = scoreFour
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerFour.value + "!\n\nNo shaddow realm for you Mr. " + playerFour.value + "!");
+                }
             }
         }
         changeAmountInput.value = "LP";
@@ -327,7 +434,7 @@ minusButtonsThree.forEach((button, index) => {
                 }
                 if (lifePointTwo.value <= 0 && lifePointOne.value != 0 && lifePointThree.value <= 0) {
                     scoreOne ++
-                    winCountOne.innerHTML = scoreThree
+                    winCountOne.innerHTML = scoreOne
                     lifePointInput.value = 8000;
                     lifePointTwo.value = 8000;
                     lifePointOne.value = 8000;
@@ -337,6 +444,55 @@ minusButtonsThree.forEach((button, index) => {
                     alert("And the winner is " + playerOne.value + "!\n\nNo shaddow realm for you Mr. " + playerOne.value + "!");
                 }
             }
+            else if (teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
+                if (lifePointOne.value != 0 && lifePointTwo.value !=0 && lifePointFour.value !=0){
+                    changeAmountTwo.disabled = true;
+                    alert("To the shaddow realm with you!\n\n" + playerThree.value + "'s' life points have reached 0.\n\n" + playerThree.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerTwo.value + " and " + playerFour.value + "!\n\n It's time to DUEL!");
+                }
+                if (lifePointOne.value > 0){
+                    changeAmountOne.disabled = false;
+                }
+                if (lifePointTwo.value != 0 && lifePointThree.value <= 0 && lifePointOne.value <= 0 && lifePointFour.value <= 0){
+                    scoreTwo ++
+                    winCountTwo.innerHTML = scoreTwo
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerTwo.value + "!\n\nNo shaddow realm for you Mr. " + playerTwo.value + "!");
+                }
+                if (lifePointTwo.value <= 0 && lifePointThree.value != 0 && lifePointOne.value <= 0 && lifePointFour.value <= 0){
+                    scoreThree ++
+                    winCountThree.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
+                }
+                if (lifePointTwo.value <= 0 && lifePointThree.value <= 0 && lifePointOne.value <= 0 && lifePointFour.value != 0){
+                    scoreFour ++
+                    winCountThree.innerHTML = scoreFour
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    lifePointFour.value = 8000;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountThree.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerFour.value + "!\n\nNo shaddow realm for you Mr. " + playerFour.value + "!");
+                }
+            }
+            
         }
         changeAmountInput.value = "LP";
     });
@@ -361,8 +517,56 @@ minusButtonsFour.forEach((button, index) => {
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
-            lifePointInput.value = 8000;
-            alert("To the shaddow realm with you!\n\n" + teamOne.value + "'s' life points have reached 0.");
+            alert("To the shaddow realm with you!\n\n" + playerFour.value + "'s' life points have reached 0.");
+
+            if (teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
+                if (lifePointTwo.value != 0 && lifePointOne.value !=0 && lifePointThree.value !=0){
+                    changeAmountThree.disabled = true;
+                    alert("To the shaddow realm with you!\n\n" + playerFour.value + "'s' life points have reached 0.\n\n" + playerFour.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerOne.value + " and " + playerThree.value + "!\n\n It's time to DUEL!");
+                }
+                if (lifePointFour.value > 0){
+                    changeAmountThree.disabled = false;
+                }
+                if (lifePointTwo.value != 0 && lifePointOne.value <= 0 && lifePointThree.value <= 0 && lifePointFour.value <= 0){
+                    scoreTwo ++
+                    winCountTwo.innerHTML = scoreTwo
+                    lifePointInput.value = 8000;
+                    lifePointOne.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointThree.value = 8000;
+                    changeAmountThree.disabled = false;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerTwo.value + "!\n\nNo shaddow realm for you Mr. " + playerTwo.value + "!");
+                }
+                if (lifePointTwo.value <= 0 && lifePointOne.value != 0 && lifePointThree.value <= 0 && lifePointFour.value <= 0) {
+                    scoreOne ++
+                    winCountOne.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointOne.value = 8000;
+                    lifePointThree.value = 8000;
+                    changeAmountThree.disabled = false;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerOne.value + "!\n\nNo shaddow realm for you Mr. " + playerOne.value + "!");
+                }
+                if (lifePointTwo.value <= 0 && lifePointOne.value <= 0 && lifePointThree.value != 0 && lifePointFour.value <= 0) {
+                    scoreThree ++
+                    winCountOne.innerHTML = scoreThree
+                    lifePointInput.value = 8000;
+                    lifePointTwo.value = 8000;
+                    lifePointOne.value = 8000;
+                    lifePointThree.value = 8000;
+                    changeAmountThree.disabled = false;
+                    changeAmountOne.disabled = false;
+                    changeAmountTwo.disabled = false;
+                    changeAmountFour.disabled = false;
+                    alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
+                }
+            }
         }
         changeAmountInput.value = "LP";
     });
