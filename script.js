@@ -221,7 +221,7 @@ minusButtons.forEach((button, index) => {
             else if (teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
                 if (lifePointTwo.value != 0 && lifePointThree.value !=0 && lifePointFour.value !=0){
                     changeAmountOne.disabled = true;
-                    alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.\n\n" + playerOne.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerThree.value + "!\n\n It's time to DUEL!");
+                    alert("To the shaddow realm with you!\n\n" + playerOne.value + "'s' life points have reached 0.\n\n" + playerOne.value + " has been elimanted from the duel!\n\nIt's down to " + playerTwo.value + " and " + playerThree.value + " and " + playerFour.value + "!\n\n It's time to DUEL!");
                 }
                 if (lifePointOne.value > 0){
                     changeAmountOne.disabled = false;
@@ -254,7 +254,7 @@ minusButtons.forEach((button, index) => {
                 }
                 if (lifePointTwo.value <= 0 && lifePointThree.value <= 0 && lifePointOne.value <= 0 && lifePointFour.value != 0){
                     scoreFour ++
-                    winCountThree.innerHTML = scoreThree
+                    winCountThree.innerHTML = scoreFour
                     lifePointInput.value = 8000;
                     lifePointTwo.value = 8000;
                     lifePointThree.value = 8000;
@@ -300,7 +300,7 @@ minusButtonsTwo.forEach((button, index) => {
             else if (playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
                 if (lifePointOne.value != 0 && lifePointThree.value !=0){
                     changeAmountTwo.disabled = true;
-                    alert("To the shaddow realm with you!\n\n" + playerTwo.value + "'s' life points have reached 0.\n\n" + playerTwo.value + " has been elimanted from the duel!\n\nIt's down to " + playerOne.value + " and " + playerThree.value + "!\n\nIt's time to DUEL!");
+                    alert("To the shaddow realm with you!\n\n" + playerTwo.value + "'s' life points have reached 0.\n\n" + playerTwo.value + " has been elimanted from the duel!\n\nIt's down to " + playerOne.value + " and " + playerThree.value + " and " + playerFour.value + "!\n\nIt's time to DUEL!");
                 }
                 if (lifePointTwo.value > 0){
                     changeAmountTwo.disabled = false;
@@ -326,17 +326,6 @@ minusButtonsTwo.forEach((button, index) => {
                     changeAmountOne.disabled = false;
                     changeAmountThree.disabled = false;
                     alert("And the winner is " + playerThree.value + "!\n\nNo shaddow realm for you Mr. " + playerThree.value + "!");
-                }
-                if (lifePointOne.value <= 0 && lifePointThree.value <= 0 && lifePointTwo.value <= 0 && lifePointFour.value != 0){
-                    scoreFour ++
-                    winCountFour.innerHTML = scoreFour
-                    lifePointInput.value = 8000;
-                    lifePointOne.value = 8000;
-                    lifePointThree.value = 8000;
-                    changeAmountTwo.disabled = false;
-                    changeAmountOne.disabled = false;
-                    changeAmountFour.disabled = false;
-                    alert("And the winner is " + playerFour.value + "!\n\nNo shaddow realm for you Mr. " + playerFour.value + "!");
                 }
             }
             else if (teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none'){
@@ -498,6 +487,7 @@ minusButtonsThree.forEach((button, index) => {
     });
 });
 
+/* 
 // Add event listeners to all "+" buttons
 plusButtonsFour.forEach((button, index) => {
     button.addEventListener('click', function() {
@@ -542,7 +532,7 @@ minusButtonsFour.forEach((button, index) => {
                 }
                 if (lifePointTwo.value <= 0 && lifePointOne.value != 0 && lifePointThree.value <= 0 && lifePointFour.value <= 0) {
                     scoreOne ++
-                    winCountOne.innerHTML = scoreThree
+                    winCountOne.innerHTML = scoreOne
                     lifePointInput.value = 8000;
                     lifePointTwo.value = 8000;
                     lifePointOne.value = 8000;
@@ -571,6 +561,8 @@ minusButtonsFour.forEach((button, index) => {
         changeAmountInput.value = "LP";
     });
 });
+
+*/
 
 // Add event listeners to all "+" buttons
 plusButtonsFive.forEach((button, index) => {
