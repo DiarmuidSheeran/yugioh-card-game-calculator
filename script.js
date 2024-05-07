@@ -584,7 +584,9 @@ minusButtonsFive.forEach((button, index) => {
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 16000;
-            alert("To the shaddow realm with you!\n\n" + teamTwo.value + "'s' life points have reached 0.");
+            scoreSix ++
+            winCountTeamTwo.innerHTML = scoreSix
+            alert("To the shaddow realm with you!\n\n" + teamOne.value + "'s' life points have reached 0.");
         }
         changeAmountInput.value = "LP";
     });
@@ -610,6 +612,9 @@ minusButtonsSix.forEach((button, index) => {
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 16000;
+            scoreFive ++
+            winCountTeamOne.innerHTML = scoreFive
+            alert("To the shaddow realm with you!\n\n" + teamTwo.value + "'s' life points have reached 0.");
         }
         changeAmountInput.value = "LP";
     });
