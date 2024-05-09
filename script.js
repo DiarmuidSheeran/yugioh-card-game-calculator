@@ -179,6 +179,10 @@ minusButtons.forEach((button, index) => {
         const lifePointInput = document.getElementById('lifePointsOne'); // Corrected ID
         const changeAmountInput = document.getElementById('changeAmountOne'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
+        lifePointInput.classList.add('life-points-animation');
+        setTimeout(() => {
+        lifePointInput.classList.remove('life-points-animation');
+        }, 500);
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             if (playerThreeCalc.style.display == 'none' && playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none') {
@@ -289,6 +293,10 @@ minusButtonsTwo.forEach((button, index) => {
         const lifePointInput = document.getElementById('lifePointsTwo'); // Corrected ID
         const changeAmountInput = document.getElementById('changeAmountTwo'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
+        lifePointInput.classList.add('life-points-animation');
+        setTimeout(() => {
+        lifePointInput.classList.remove('life-points-animation');
+        }, 500);
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             if (playerThreeCalc.style.display == 'none' && playerFourCalc.style.display == 'none' && teamOneCalc.style.display == 'none' && teamTwoCalc.style.display == 'none') {
@@ -398,6 +406,10 @@ minusButtonsThree.forEach((button, index) => {
         const lifePointInput = document.getElementById('lifePointsThree'); // Corrected ID
         const changeAmountInput = document.getElementById('changeAmountThree'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
+        lifePointInput.classList.add('life-points-animation');
+        setTimeout(() => {
+        lifePointInput.classList.remove('life-points-animation');
+        }, 500);
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             alert("To the shaddow realm with you!\n\n" + playerThree.value + "'s' life points have reached 0.");
@@ -581,6 +593,10 @@ minusButtonsFive.forEach((button, index) => {
         const lifePointInput = document.getElementById('lifePointsFive'); // Corrected ID
         const changeAmountInput = document.getElementById('changeAmountFive'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
+        lifePointInput.classList.add('life-points-animation');
+        setTimeout(() => {
+        lifePointInput.classList.remove('life-points-animation');
+        }, 500);
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 16000;
@@ -609,6 +625,10 @@ minusButtonsSix.forEach((button, index) => {
         const lifePointInput = document.getElementById('lifePointsSix'); // Corrected ID
         const changeAmountInput = document.getElementById('changeAmountSix'); // Corrected ID
         const changeAmount = parseInt(changeAmountInput.value) || 0; // Get the change amount or default to 0 if not provided
+        lifePointInput.classList.add('life-points-animation');
+        setTimeout(() => {
+        lifePointInput.classList.remove('life-points-animation');
+        }, 500);
         lifePointInput.value = parseInt(lifePointInput.value) - changeAmount;
         if (lifePointInput.value <=0 ){
             lifePointInput.value = 16000;

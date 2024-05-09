@@ -9,9 +9,10 @@
 </head>
 <body>
     <div class="header">
-        <div class="row mb-4">
+        <div class="row">
             <div class="col text-center">
-                <h1 class="text-light">Yugioh Duel Calculator</h1>
+                <img src="images/yugioh-logo.png" alt="Yugioh Logo" class="ml-1 img-fluid">
+                <h1 class="text-light"><i><u>Duel Calculator</u></i></h1>
             </div>
         </div>
     </div>
@@ -59,16 +60,16 @@
         <div class="row mt-4" id="playerOneCalc">
             <div class="col text-center">
                 <h3 class="text-light" id="playerNameOne">Player 1:</h3>
-                <h6 class="text-light text-left">Life Points Remaining | Wins: <span id="winCountOne">0</span></h6>
+                <h6 class="text-light text-left">Life Points Remaining | <span class="text-warning">Wins: <span id="winCountOne" class="text-danger">0</span></span></h6>
                 <div class="input-group">
-                    <input type="number" class="form-control text-warning text-center mr-2 w-50 text-strong" id="lifePointsOne" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="8000" readonly>
+                    <input type="number" class="form-control text-warning text-center mr-4 w-50 text-strong rounded" id="lifePointsOne" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="8000" readonly>
                     <br>
                     <div class="input-group-append">
-                        <button class="btn btn-success btn-plus-one">+</button>
+                        <button class="btn btn-success btn-plus-one border border-light rounded mr-1">+</button>
                     </div>
                     <input type="number" id="changeAmountOne" class="form-control text-center"  placeholder="LP">
                     <div class="input-group-append">
-                        <button class="btn btn-danger btn-minus-one">-</button>
+                        <button class="btn btn-danger btn-minus-one border border-light rounded ml-1">-</button>
                     </div>
                 </div>
             </div>
@@ -76,16 +77,16 @@
         <div class="row mt-4" id="playerTwoCalc">
             <div class="col text-center">
                 <h3 class="text-light" id="playerNameTwo">Player 2:</h3>
-                <h6 class="text-light text-left">Life Points Remaining  | Wins: <span id="winCountTwo">0</span></h6>
+                <h6 class="text-light text-left">Life Points Remaining  | <span class="text-warning">Wins: <span id="winCountTwo" class="text-danger">0</span></span></h6>
                 <div class="input-group">
-                    <input type="number" class="form-control text-warning text-center mr-2 w-50" id="lifePointsTwo" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="8000" readonly>
+                    <input type="number" class="form-control text-warning text-center mr-4 w-50 rounded" id="lifePointsTwo" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="8000" readonly>
                     <br>
                     <div class="input-group-append">
-                        <button class="btn btn-success btn-plus-two">+</button>
+                        <button class="btn btn-success btn-plus-two border border-light rounded mr-1">+</button>
                     </div>
                     <input type="number" id="changeAmountTwo" class="form-control text-center" placeholder="LP">
                     <div class="input-group-append">
-                        <button class="btn btn-danger btn-minus-two">-</button>
+                        <button class="btn btn-danger btn-minus-two border border-light rounded ml-1">-</button>
                     </div>
                 </div>
             </div>
@@ -93,16 +94,16 @@
         <div class="row mt-4" id="playerThreeCalc">
             <div class="col text-center">
                 <h3 class="text-light" id="playerNameThree">Player 3:</h3>
-                <h6 class="text-light text-left">Life Points Remaining  | Wins: <span id="winCountThree">0</span></h6>
+                <h6 class="text-light text-left">Life Points Remaining  | <span class="text-warning">Wins: <span id="winCountThree" class="text-danger">0</span></span></h6>
                 <div class="input-group">
-                    <input type="number" class="form-control text-warning text-center mr-2 w-50" id="lifePointsThree" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="8000" readonly>
+                    <input type="number" class="form-control text-warning text-center mr-4 w-50 rounded" id="lifePointsThree" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="8000" readonly>
                     <br>
                     <div class="input-group-append">
-                        <button class="btn btn-success btn-plus-three">+</button>
+                        <button class="btn btn-success btn-plus-three border border-light rounded mr-1">+</button>
                     </div>
                     <input type="number" id="changeAmountThree" class="form-control text-center" placeholder="LP">
                     <div class="input-group-append">
-                        <button class="btn btn-danger btn-minus-three">-</button>
+                        <button class="btn btn-danger btn-minus-three border border-light rounded ml-1">-</button>
                     </div>
                 </div>
             </div>
@@ -110,16 +111,16 @@
         <div class="row mt-4" id="playerFourCalc">
             <div class="col text-center">
                 <h3 class="text-light" id="playerNameFour">Player 4:</h3>
-                <h6 class="text-light text-left">Life Points Remaining  | Wins: <span id="winCountFour">0</span></h6>
+                <h6 class="text-light text-left">Life Points Remaining  | <span class="text-warning">Wins: <span id="winCountFour" class="text-danger">0</span></span></h6>
                 <div class="input-group">
-                    <input type="number" class="form-control text-warning text-center mr-2 w-50" id="lifePointsFour" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="8000" readonly>
+                    <input type="number" class="form-control text-warning text-center mr-4 w-50 rounded" id="lifePointsFour" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="8000" readonly>
                     <br>
                     <div class="input-group-append">
-                        <button class="btn btn-success btn-plus-four">+</button>
+                        <button class="btn btn-success btn-plus-four border border-light rounded mr-1">+</button>
                     </div>
                     <input type="number" id="changeAmountFour" class="form-control text-center" placeholder="LP">
                     <div class="input-group-append">
-                        <button class="btn btn-danger btn-minus-four">-</button>
+                        <button class="btn btn-danger btn-minus-four border border-light rounded ml-1">-</button>
                     </div>
                 </div>
             </div>
@@ -127,16 +128,16 @@
         <div class="row mt-4" id="teamOneCalc">
             <div class="col text-center">
                 <h3 class="text-light" id="teamNameOne">Team One:</h3>
-                <h6 class="text-light text-left">Life Points Remaining  | Wins: <span id="winCountTeamOne">0</span></h6>
+                <h6 class="text-light text-left">Life Points Remaining  | <span class="text-warning">Wins: <span id="winCountTeamOne" class="text-danger">0</span></span></h6>
                 <div class="input-group">
-                    <input type="number" class="form-control text-warning text-center mr-2 w-50" id="lifePointsFive" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="16000" readonly>
+                    <input type="number" class="form-control text-warning text-center mr-4 w-50 rounded" id="lifePointsFive" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="16000" readonly>
                     <br>
                     <div class="input-group-append">
-                        <button class="btn btn-success btn-plus-five">+</button>
+                        <button class="btn btn-success btn-plus-five border border-light rounded mr-1">+</button>
                     </div>
                     <input type="number" id="changeAmountFive" class="form-control text-center" placeholder="LP">
                     <div class="input-group-append">
-                        <button class="btn btn-danger btn-minus-five">-</button>
+                        <button class="btn btn-danger btn-minus-five border border-light rounded ml-1">-</button>
                     </div>
                 </div>
             </div>
@@ -144,16 +145,16 @@
         <div class="row mt-4" id="teamTwoCalc">
             <div class="col text-center">
                 <h3 class="text-light" id="teamNameTwo">Team Two:</h3>
-                <h6 class="text-light text-left">Life Points Remaining  | Wins: <span id="winCountTeamTwo">0</span></h6>
+                <h6 class="text-light text-left">Life Points Remaining  | <span class="text-warning">Wins: <span id="winCountTeamTwo" class="text-danger">0</span></span></h6>
                 <div class="input-group">
-                    <input type="number" class="form-control text-warning text-center mr-2 w-50" id="lifePointsSix" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="16000" readonly>
+                    <input type="number" class="form-control text-warning text-center mr-4 w-50 rounded" id="lifePointsSix" style="background-image: url(images/life-points-background.png); text-decoration: solid; font-family: Verdana, Geneva, Tahoma, sans-serif;" value="16000" readonly>
                     <br>
                     <div class="input-group-append">
-                        <button class="btn btn-success btn-plus-six">+</button>
+                        <button class="btn btn-success btn-plus-six border border-light rounded mr-1">+</button>
                     </div>
                     <input type="number" id="changeAmountSix" class="form-control text-center" placeholder="LP">
                     <div class="input-group-append">
-                        <button class="btn btn-danger btn-minus-six">-</button>
+                        <button class="btn btn-danger btn-minus-six border border-light rounded ml-1">-</button>
                     </div>
                 </div>
             </div>

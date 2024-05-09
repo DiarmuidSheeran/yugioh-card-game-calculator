@@ -32,6 +32,7 @@ body {
 }
 
 #calculator {
+    margin-top: 100px;
     display: none;
 }
 
@@ -43,6 +44,18 @@ body {
 }
 
 #nameScreen {
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center; 
     display: none;
 }
 
+@keyframes decreaseLifePoints {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  /* Apply the animation to the life points element */
+  .life-points-animation {
+    animation: decreaseLifePoints 0.5s ease-in-out;
+  }
